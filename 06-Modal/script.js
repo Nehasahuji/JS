@@ -31,8 +31,7 @@ overlay.addEventListener('click',closeModal);
 // working of key
 
 document.addEventListener('keydown',function(event){
-    if(event.key==='Escape'){
-        if(!modal.classList.contains('hidden')){
+    if(event.key==='Escape' && !modal.classList.contains('hidden')){
             closeModal();
         }
     }
